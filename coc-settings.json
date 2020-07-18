@@ -1,0 +1,9 @@
+{
+    "coc.source.omni.filetypes": [
+      "typescript",
+      "typescriptreact",
+      "html",
+      "css"
+    ],
+    "pyls.enable": false
+}
