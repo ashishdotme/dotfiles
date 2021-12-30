@@ -11,3 +11,11 @@ alias leetcode='cd ~/Code/personal/code.ashish.me/leetcode'
 alias geeksforgeeks='cd ~/Code/personal/code.ashish.me/geeksforgeeks'
 alias til='~/Code/til'
 alias website='~/Code/website'
+
+# Generator alias
+alias readme='yo ashishdotme:readme'
+alias javap='yo ashishdotme:javaproblem'
+alias jsp='yo ashishdotme:jsproblem'
+
+# zsh
+alias restart='. ~/.zshrc'
