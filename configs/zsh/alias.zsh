@@ -9,3 +9,5 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 # Programming problems alias
 alias leetcode='cd ~/Code/personal/code.ashish.me/leetcode'
 alias geeksforgeeks='cd ~/Code/personal/code.ashish.me/geeksforgeeks'
+alias til='~/Code/til'
+alias website='~/Code/website'
