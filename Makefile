@@ -1,0 +1,2 @@
+init:
+	./sync.sh
