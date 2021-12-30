@@ -1,3 +1,6 @@
+brew "broot" 
+brew "mcfly"
+brew "zoxide"
 brew "stow"                   
 brew "zsh"                    
 brew "mosh"                   

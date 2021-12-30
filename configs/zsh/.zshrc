@@ -20,7 +20,7 @@ SPACESHIP_PROMPT_ORDER=(
   git           # Git section (git_branch + git_status)
   hg            # Mercurial section (hg_branch  + hg_status)
   package       # Package version
-  # node          # Node.js section
+  node          # Node.js section
   ruby          # Ruby section
   elixir        # Elixir section
   xcode         # Xcode section
@@ -149,3 +149,7 @@ alias python="python3"
 alias mon2cam="deno run --unstable -A -r -q https://raw.githubusercontent.com/ShayBox/Mon2Cam/master/src/mod.ts"
 export PATH="/usr/local/opt/maven@3.5/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+
+eval "$(zoxide init zsh --cmd cd)"
+source ~/.fzf.zsh 
+source /Users/ashish/.config/broot/launcher/bash/br

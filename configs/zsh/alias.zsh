@@ -1,6 +1,6 @@
 # Common alias
 alias dockerbuild="docker-compose up -d --no-deps --build"
-alias code='cd ~/Code'
+alias codes='cd ~/Code'
 alias dotfiles='cd ~/Code/dotfiles'
 alias q="cd ~ && clear"
 alias desktop='cd ~/Desktop'
