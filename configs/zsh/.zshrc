@@ -5,6 +5,7 @@
 export ZSH="/Users/ashish/.oh-my-zsh"
 export DENO_INSTALL="/Users/ashish/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+export STARSHIP_CONFIG=~/.starship/starship.toml
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -150,6 +151,6 @@ alias mon2cam="deno run --unstable -A -r -q https://raw.githubusercontent.com/Sh
 export PATH="/usr/local/opt/maven@3.5/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 
-eval "$(zoxide init zsh --cmd cd)"
+eval "$(zoxide init zsh)"
 source ~/.fzf.zsh 
 source /Users/ashish/.config/broot/launcher/bash/br
