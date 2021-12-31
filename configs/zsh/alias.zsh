@@ -7,6 +7,7 @@ alias desktop='cd ~/Desktop'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Programming problems alias
+alias probs='cd ~/Code/personal/code.ashish.me/'
 alias leetcode='cd ~/Code/personal/code.ashish.me/leetcode'
 alias geeksforgeeks='cd ~/Code/personal/code.ashish.me/geeksforgeeks'
 alias cses='cd ~/Code/personal/code.ashish.me/cses'
