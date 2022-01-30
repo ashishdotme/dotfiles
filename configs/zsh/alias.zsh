@@ -7,6 +7,7 @@ alias desktop='cd ~/Desktop'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias cat='bat'
 alias cd='z'
+alias vim='nvim'
 
 # Programming problems alias
 alias probs='cd ~/Code/personal/code.ashish.me/'
