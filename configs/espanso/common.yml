@@ -1,0 +1,17 @@
+
+matches:
+  - trigger: ":ap"
+    force_clipboard: true
+    replace: Ashish Patel
+  - trigger: ":asp"
+    force_clipboard: true
+    replace: Ashish Sushil Patel
+  - trigger: ":link"
+    force_clipboard: true
+    replace: Ashish Patel
+  - trigger: ":email"
+    force_clipboard: true
+    replace: ashishsushilpatel@gmail.com
+  - trigger: ":gh"
+    force_clipboard: true
+    replace: "https://github.com/ashishdotme"

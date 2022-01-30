@@ -1,0 +1,4 @@
+name: vscode
+filter_exec: "Visual Studio Code"
+backend: Clipboard
+backspace_delay: 3000

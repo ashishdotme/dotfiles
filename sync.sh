@@ -12,5 +12,6 @@ ln -sf ~/code/dotfiles/configs/starship/starship.toml ~/.starship/starship.toml
 sudo ln -sf ~/code/dotfiles/etc/hosts /etc/hosts
 
 #espanso
-ln -sf ~/code/dotfiles/configs/espanso/common.yml /Users/ashish/Library/Preferences/espanso/user/common.yml
-ln -sf ~/code/dotfiles/configs/espanso/utils.yml /Users/ashish/Library/Preferences/espanso/user/utils.yml
+ln -sf ~/code/dotfiles/configs/espanso/common.yml /Users/ashish/Library/Preferences/espanso/match/common.yml
+ln -sf ~/code/dotfiles/configs/espanso/utils.yml /Users/ashish/Library/Preferences/espanso/match/utils.yml
+ln -sf ~/code/dotfiles/configs/espanso/vscode.yml /Users/ashish/Library/Preferences/espanso/match/vscode.yml

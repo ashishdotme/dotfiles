@@ -1,0 +1,56 @@
+matches:
+  - trigger: ":ip"
+    force_clipboard: true
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "curl 'https://api.ipify.org'"
+  - trigger: ":now"
+    force_clipboard: true
+    replace: "{{time}}  "
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%l:%M %p"
+  - trigger: ":mcf"
+    force_clipboard: true
+    replace: |-
+      ```
+      $|$
+      ```
+  - trigger: ":mcollapse"
+    force_clipboard: true
+    replace: "\n<details>\n\t<summary>$|$</summary>\n\t<p></p>\n</details>"
+  - trigger: ":("
+    force_clipboard: true
+    replace: ($|$)
+  - trigger: ":["
+    force_clipboard: true
+    replace: "[$|$]"
+  - trigger: ":{"
+    force_clipboard: true
+    replace: "{$|$}"
+  - trigger: ":<"
+    force_clipboard: true
+    replace: "<$|$>"
+  - trigger: ":`"
+    force_clipboard: true
+    replace: "`$|$`"
+  - trigger: ":'"
+    force_clipboard: true
+    replace: "'$|$'"
+  - trigger: ":\""
+    force_clipboard: true
+    replace: "\"$|$\""
+  - trigger: ":_"
+    force_clipboard: true
+    replace: _$|$_
+  - trigger: ":*"
+    force_clipboard: true
+    replace: "*$|$*"
+  - trigger: ":-"
+    force_clipboard: true
+    replace: "-$|$-"
