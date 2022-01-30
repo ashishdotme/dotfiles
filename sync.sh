@@ -6,8 +6,10 @@ ln -sf ~/code/dotfiles/.editorconfig ~/.editorconfig
 ln -sf ~/code/dotfiles/.gitignore ~/.gitignore
 
 # zsh
+ln -sf ~/code/dotfiles/configs/neofetch/config.conf ~/.config/neofetch/config.conf
 ln -sf ~/code/dotfiles/configs/zsh/.zshrc ~/.zshrc
-ln -sf ~/code/dotfiles/configs/zsh/alias.zsh ~/alias.zsh
+ln -sf ~/code/dotfiles/configs/zsh/.alias ~/.alias
+ln -sf ~/code/dotfiles/configs/zsh/.functions ~/.functions
 ln -sf ~/code/dotfiles/configs/starship/starship.toml ~/.starship/starship.toml
 
 # host

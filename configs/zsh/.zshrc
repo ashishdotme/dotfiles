@@ -10,7 +10,10 @@ export STARSHIP_CONFIG=~/.starship/starship.toml
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-source ~/alias.zsh
+
+source ~/.alias
+source ~/.functions
+
 ZSH_THEME="spaceship"
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_PROMPT_ORDER=(
