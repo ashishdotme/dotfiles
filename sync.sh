@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # misc
-ln -sf ~/code/dotfiles/configs/.editorconfig ~/.editorconfig
+ln -sf ~/code/dotfiles/welcome.sh ~/utils/welcome.sh
+ln -sf ~/code/dotfiles/.editorconfig ~/.editorconfig
+ln -sf ~/code/dotfiles/.gitignore ~/.gitignore
 
 # zsh
 ln -sf ~/code/dotfiles/configs/zsh/.zshrc ~/.zshrc

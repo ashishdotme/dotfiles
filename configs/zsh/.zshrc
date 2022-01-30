@@ -152,5 +152,6 @@ export PATH="/usr/local/opt/maven@3.5/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 
 eval "$(zoxide init zsh)"
-source ~/.fzf.zsh 
+source ~/.fzf.zsh
 source /Users/ashish/.config/broot/launcher/bash/br
+~/utils/welcome.sh
