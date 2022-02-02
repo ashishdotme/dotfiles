@@ -6,6 +6,39 @@ export ZSH="/Users/ashish/.oh-my-zsh"
 export DENO_INSTALL="/Users/ashish/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 export STARSHIP_CONFIG=~/.starship/starship.toml
+
+fd_default_opts='--hidden --follow --exclude "{.steam,.local,.cache,.git,node_modules}"'
+fd_files="fd ${fd_default_opts} -t f ."
+fd_dirs="fd ${fd_default_opts} -t d ."
+
+fzf_finder_options='--height 40% --layout=reverse --border'
+fzf_file_layout="--preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+fzf_dir_layout="--preview 'exa -lbhHigUmuSa --no-time  --git --color-scale {}'"
+
+export FZF_DEFAULT_COMMAND=$fd_files
+export FZF_DEFAULT_OPTS=$fzf_finder_options
+
+export FZF_CTRL_T_COMMAND=$fd_files
+export FZF_CTRL_T_OPTS=$fzf_file_layout
+
+export FZF_ALT_C_COMMAND=$fd_dirs
+export FZF_ALT_C_OPTS=$fzf_dir_layout
+
+autoload -Uz compinit && compinit
+zstyle ':completion:*' ignored-patterns '*.|*..' # ignore the special dirs . and .. in tab completion
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+ZSH_AUTOSUGGEST_USE_ASYNC=1
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#5a524c'
+
+bindkey '^]' autosuggest-accept
+bindkey '^P' fzf-file-widget
+bindkey '^O' fzf-cd-widget
+bindkey '^R' fzf-history-widget
+bindkey '^E' 'vim $(fzf)\n'
+
+export EDITOR=code
+export BROWSER=/Applications/Microsoft\ Edge.app/Contents/MacOS/Microsoft\ Edge
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -111,7 +144,26 @@ SPACESHIP_PROMPT_ORDER=(
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-aliases-exa emoji encode64 macos aliases dotenv fzf gitignore git-flow httpie marked2 npm ripgrep yarn)
+plugins=(
+  git
+  fd
+  zsh-aliases-exa
+  emoji
+  encode64
+  macos
+  aliases
+  dotenv
+  fzf
+  gitignore
+  git-flow
+  httpie
+  marked2
+  npm
+  ripgrep
+  yarn
+  zsh-autosuggestions
+  zsh-completions
+)
 
 source $ZSH/oh-my-zsh.sh
 

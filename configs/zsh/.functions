@@ -45,3 +45,9 @@ config_npm() {
   npm config set init.author.url "ashish.me"
   npm config set init.license "MIT"
 }
+
+fif() {
+    if [ ! "$#" -gt 0 ]; then echo "Need a string to search for!"; return 1; fi
+    local file
+    file="$(rga --max-count=1 --ignore-case --files-with-matches --no-messages "$*" | fzf-tmux +m --preview="bat --style=numbers --color=always --line-range :500 {}")" && echo "opening $file" && open "$file" || return 1;
+}

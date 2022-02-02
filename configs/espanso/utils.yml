@@ -15,6 +15,7 @@ matches:
         type: date
         params:
           format: "%l:%M %p"
+
   - trigger: ":mcf"
     force_clipboard: true
     replace: |-
@@ -24,6 +25,12 @@ matches:
   - trigger: ":mcollapse"
     force_clipboard: true
     replace: "\n<details>\n\t<summary>$|$</summary>\n\t<p></p>\n</details>"
+  - trigger: ":mlink"
+    replace: "[$|$]({{clipboard}})"
+    vars:
+    - name: "clipboard"
+      type: "clipboard"
+
   - trigger: ":("
     force_clipboard: true
     replace: ($|$)
@@ -54,3 +61,6 @@ matches:
   - trigger: ":-"
     force_clipboard: true
     replace: "-$|$-"
+  - trigger: ":tc"
+    force_clipboard: true
+    replace: "console.log($|$)"

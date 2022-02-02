@@ -8,7 +8,7 @@ matches:
     replace: Ashish Sushil Patel
   - trigger: ":link"
     force_clipboard: true
-    replace: Ashish Patel
+    replace: https://www.linkedin.com/in/ashishdotme/
   - trigger: ":email"
     force_clipboard: true
     replace: ashishsushilpatel@gmail.com

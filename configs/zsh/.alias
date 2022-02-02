@@ -1,6 +1,7 @@
 # shortcuts
 alias dockerbuild="docker-compose up -d --no-deps --build"
 alias codes='cd ~/Code'
+alias docs='cd ~/Docs'
 alias dotfiles='cd ~/Code/dotfiles'
 alias q="cd ~ && clear"
 alias desktop='cd ~/Desktop'
@@ -8,7 +9,8 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias cat='bat --style="changes,header"'
 alias cd='z'
 alias vim='nvim'
-
+alias search='fzf'
+alias edge="/Applications/Microsoft\ Edge.app/Contents/MacOS/Microsoft\ Edge > /dev/null 2>&1"
 # Programming problems alias
 alias probs='cd ~/Code/personal/code.ashish.me/'
 alias leetcode='cd ~/Code/personal/code.ashish.me/leetcode'
@@ -26,7 +28,7 @@ alias jsp='yo ashishdotme:jsproblem'
 alias restart='. ~/.zshrc'
 
 # Common alias
-alias zshrc='${=EDITOR} ${ZDOTDIR:-$HOME}/.zshrc' # Quick access to the .zshrc file
+alias zshrc='code ${ZDOTDIR:-$HOME}/.zshrc' # Quick access to the .zshrc file
 alias grep='grep --color'
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
 alias t='tail -f'
