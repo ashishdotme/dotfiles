@@ -11,6 +11,7 @@ alias cd='z'
 alias vim='nvim'
 alias search='fzf'
 alias edge="/Applications/Microsoft\ Edge.app/Contents/MacOS/Microsoft\ Edge > /dev/null 2>&1"
+
 # Programming problems alias
 alias probs='cd ~/Code/personal/code.ashish.me/'
 alias leetcode='cd ~/Code/personal/code.ashish.me/leetcode'

@@ -84,6 +84,7 @@ SPACESHIP_PROMPT_ORDER=(
   jobs          # Background jobs indicator
   exit_code     # Exit code section
   char          # Prompt character
+
 )
 
 # Set list of themes to pick from when loading at random
@@ -163,6 +164,7 @@ plugins=(
   yarn
   zsh-autosuggestions
   zsh-completions
+  poetry
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -210,3 +212,5 @@ eval "$(zoxide init zsh)"
 source ~/.fzf.zsh
 source /Users/ashish/.config/broot/launcher/bash/br
 ~/utils/welcome.sh
+
+export PATH="$HOME/.poetry/bin:$PATH"
