@@ -5,6 +5,7 @@ ln -sf ~/code/dotfiles/welcome.sh ~/utils/welcome.sh
 ln -sf ~/code/dotfiles/.editorconfig ~/.editorconfig
 ln -sf ~/code/dotfiles/.gitignore ~/.gitignore
 ln -sf ~/code/dotfiles/.ignore ~/.ignore
+ln -sf ~/code/dotfiles/.npmrc ~/.npmrc
 
 # zsh
 ln -sf ~/code/dotfiles/configs/neofetch/config.conf ~/.config/neofetch/config.conf
