@@ -15,6 +15,7 @@
 - `bat` - cat
 - `z` - cd
 - `broot` - tree
+- `fd` - find files
 
 ## Support
 
